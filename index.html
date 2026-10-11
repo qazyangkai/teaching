@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive Teaching Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,700&display=swap">
+<style>
+:root{--bg:#F3F5F8;--panel:#FFFFFF;--ink:#1B2230;--muted:#5B6475;--line:#D3D9E3;--accent:#2A64C5}
+@media (prefers-color-scheme: dark){:root{--bg:#10141B;--panel:#181E28;--ink:#E6EAF0;--muted:#97A1B3;--line:#2C3544;--accent:#78A8F2;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.6}
+main{max-width:760px;margin:0 auto;padding:56px 16px 64px}
+h1{font-family:"Source Serif 4",Georgia,serif;font-size:32px;line-height:1.2;margin:0}
+.sub{margin:8px 0 32px;color:var(--muted)}
+.tools{display:grid;gap:16px}
+a.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;color:inherit;text-decoration:none;transition:border-color .15s}
+a.card:hover{border-color:var(--accent)}
+a.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card h2{margin:0 0 6px;font-size:19px;font-weight:600}
+.card p{margin:0;color:var(--muted)}
+.go{display:inline-block;margin-top:12px;color:var(--accent);font-weight:500}
+@media (prefers-reduced-motion:reduce){a.card{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Interactive Teaching Tools</h1>
+  <p class="sub">Built for Managerial Statistics at the University of Massachusetts Boston. Each tool runs in any web browser.</p>
+  <div class="tools">
+    <a class="card" href="descriptive-statistics.html">
+      <h2>Descriptive Statistics Lab</h2>
+      <p>Step through mean, median, variance, standard deviation, skewness, and box plots, and change the data to see how each result responds.</p>
+      <span class="go">Open the tool &rarr;</span>
+    </a>
+    <a class="card" href="probability.html">
+      <h2>Probability Tool</h2>
+      <p>A worked example that links a Venn diagram, a joint probability table, and the formula behind each number.</p>
+      <span class="go">Open the tool &rarr;</span>
+    </a>
+  </div>
+</main>
+</body>
+</html>
